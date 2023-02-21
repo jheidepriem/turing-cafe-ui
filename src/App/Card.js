@@ -3,11 +3,11 @@ import './Card.css'
 
 const Card = ({id, name, date, time, number}) => {
   return (
-    <div className='Card'>
+    <div className='card'>
       <h2>{name}</h2>
-      <p>{date}</p>
-      <p>{time}</p>
-      <p>{number}</p>
+      <p>Date: {date}</p>
+      <p>Time: {time}</p>
+      <p>Number of Party: {number}</p>
     </div>
   )
 }
