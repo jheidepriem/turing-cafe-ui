@@ -6,8 +6,8 @@ const Card = ({id, name, date, time, number}) => {
     <div className='card'>
       <h2>{name}</h2>
       <p>Date: {date}</p>
-      <p>Time: {time}</p>
-      <p>Number of Party: {number}</p>
+      <p>{time} pm</p>
+      <p>Number of Guests: {number}</p>
     </div>
   )
 }
