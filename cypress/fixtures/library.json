@@ -1,5 +1,4 @@
-{
-  "reservations": [
+[
   {
   "id": 1,
   "name": "Christie",
@@ -63,4 +62,4 @@
   "time": "7:30",
   "number": 3
   }
-]}
+]
