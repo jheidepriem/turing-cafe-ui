@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { fetchApiData } from './Api';
 import './App.css';
+import Reservations from './Reservations';
 
 class App extends Component {
   constructor() {
@@ -18,13 +19,9 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className='app-title'>Turing Cafe Reservations</h1>
-        <div className='resy-form'>
-
-        </div>
-        <div className='resy-container'>
-          
-        </div>
+        <Reservations reservations={this.state.reservations}/>
       </div>
+      
     )
   }
 }
