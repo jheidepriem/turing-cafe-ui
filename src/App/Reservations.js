@@ -1,11 +1,9 @@
-import React from 'react';
-import Card from './Card';
-import './Reservations.css';
+import React from "react";
+import Card from "./Card";
+import "./Reservations.css";
 
-
-const Reservations = ({reservations}) => {
-
-  const reservationCards = reservations.map(reservation => {
+const Reservations = ({ reservations, deleteReservation }) => {
+  const reservationCards = reservations.map((reservation) => {
     return (
       <Card
         name={reservation.name}
@@ -14,15 +12,12 @@ const Reservations = ({reservations}) => {
         number={reservation.number}
         id={reservation.id}
         key={reservation.id}
-     />
-    )
-  })
+        deleteReservation={deleteReservation}
+      />
+    );
+  });
 
-  return (
-    <div className = 'reservation-container'>
-      {reservationCards}
-    </div>
-  )
-}
+  return <div className="reservation-container">{reservationCards}</div>;
+};
 
 export default Reservations;
